@@ -1,8 +1,8 @@
 return {
-  
-{ "NvChad/ui", branch = "v2.0", lazy = false },
 
-  { "NvChad/nvterm",
+  { "NvChad/ui", lazy = false },
+
+  { "norcalli/nvim-colorizer.lua",
     init = function()
       require("core.utils").load_mappings "nvterm"
     end,
@@ -37,4 +37,19 @@ return {
       require("indent_blankline").setup(opts)
     end,
   },
+
+  "stevearc/dressing.nvim",
+
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
+
+  {
+    'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' }
+  },
+
 }

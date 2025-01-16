@@ -6,6 +6,10 @@ return {
     end,
   },
 
+  -- More useful keymaps
+  { 'echasnovski/mini.nvim', version = false },
+  "kyazdani42/nvim-web-devicons",
+
   -- Only load whichkey after all the gui
   {
     "folke/which-key.nvim",
