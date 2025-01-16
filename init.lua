@@ -32,5 +32,68 @@ require("neocord").setup({
 -- empty setup using defaults
 require("nvim-tree").setup()
 
+require("nvim-treesitter").setup()
+
 -- Enable Relative Line Numbers.
 vim.wo.relativenumber = true
+
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
+end
+
+vim.opt.rtp:prepend(lazypath)
+
+require("lazy").setup({
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    config = function()
+      require("nvim-treesitter.configs").setup {
+	ensure_installed = { "c", "lua", "rust" },
+        highlight = { enable = true, }
+      }
+    end
+  },
+})
+
+-- Lualine: Bottom bar setup
+require('lualine').setup({
+  options = {
+    theme = 'tokyonight',
+    section_separators = {'', ''},
+    component_separators = {'', ''},
+  },
+  sections = {
+    lualine_a = {'mode'},
+    lualine_b = {'branch'},
+    lualine_c = {'filename'},
+    lualine_x = {'encoding', 'fileformat', 'filetype'},
+    lualine_y = {'progress'},
+    lualine_z = {'location'},
+  },
+})
+
+vim.cmd[[colorscheme tokyonight-storm]]
+
+-- Autocomplete keybinds
+local cmp = require('cmp')
+
+cmp.setup({
+  mapping = {
+    -- Navigate between completion item
+    ['<M-k>'] = cmp.mapping.select_prev_item(),
+    ['<M-j>'] = cmp.mapping.select_next_item(),
+
+    -- Confirm item
+    ['<Tab>'] = cmp.mapping.confirm({select = true}),
+  }
+})
