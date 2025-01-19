@@ -23,10 +23,22 @@ return {
   },
 
   {
+    "williamboman/mason-lspconfig.nvim",
+    config = function ()
+      require("mason-lspconfig").setup{
+        ensure_installed = {'ast_grep', 'ts_ls'}
+      }
+    end,
+
+  },
+
+  {
     "neovim/nvim-lspconfig",
     event = "User FilePost",
     config = function()
       local lspconfig = require("lspconfig")
+      lspconfig.ast_grep.setup {}
+      lspconfig.ts_ls.setup {}
       lspconfig.sourcekit.setup {}
 
       vim.api.nvim_create_autocmd('LspAttach', {
