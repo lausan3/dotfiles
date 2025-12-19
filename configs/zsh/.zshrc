@@ -161,5 +161,5 @@ export PROJECTS_DIR="$HOME/Engineering"
 # cd to projects directory macro
 alias projects='cd $PROJECTS_DIR'
 
-# git config alias for dotfiles repo
-alias dotfiles='/usr/bin/git --git-dir=$PROJECTS_DIR/Standalone/dotfiles/.git --work-tree=$HOME'
+# cd to dotfiles directory macro
+alias dotfiles='cd $PROJECTS_DIR/Standalone/dotfiles'
