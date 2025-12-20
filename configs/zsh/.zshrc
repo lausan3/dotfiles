@@ -155,11 +155,19 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 ## syntax-highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# projects directory
+# Editor Variable
+export EDITOR='nvim'
+
+# COMMON DIRECTORIES
 export PROJECTS_DIR="$HOME/Engineering"
+export DOTFILES_DIR="$PROJECTS_DIR/Standalone/dotfiles/configs"
 
-# cd to projects directory macro
-alias projects='cd $PROJECTS_DIR'
+# MACROS FOR CDING TO COMMON DIRECTORIES
+alias dotfiles="cd $DOTFILES_DIR"
+alias projects="cd $PROJECTS_DIR"
+alias mt-nvimconfig="cd $DOTFILES_DIR/nvim/.config/nvim"  # mt means move to
 
-# cd to dotfiles directory macro
-alias dotfiles='cd $PROJECTS_DIR/Standalone/dotfiles'
+# MACROS FOR COMMON CONFIGURATION FILES - ecf = edit config for
+alias ecf-zsh="$EDITOR $DOTFILES_DIR/zsh/.zshrc"
+alias ecf-nvim="$EDITOR $DOTFILES_DIR/nvim/.config/nvim/init.lua"
+alias ecf-ghostty="$EDITOR $DOTFILES_DIR/ghostty/Library/Application\ Support/com.mitchellh.ghostty/config"
