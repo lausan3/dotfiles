@@ -1,6 +1,12 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.coding.nvim-cmp"
+    "lazyvim.plugins.extras.ai.copilot-chat",
+    "lazyvim.plugins.extras.coding.nvim-cmp",
+    "lazyvim.plugins.extras.editor.telescope",
+    "lazyvim.plugins.extras.formatting.prettier",
+    "lazyvim.plugins.extras.lsp.neoconf",
+    "lazyvim.plugins.extras.ui.indent-blankline",
+    "lazyvim.plugins.extras.util.dot"
   ],
   "install_version": 8,
   "news": {

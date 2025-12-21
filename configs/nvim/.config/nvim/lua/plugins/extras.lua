@@ -1,25 +1,6 @@
 return {
   "nvim-lua/plenary.nvim",
   "kyazdani42/nvim-web-devicons",
-  -- Only load whichkey after all the gui
-  {
-    "folke/which-key.nvim",
-    event = "VeryLazy",
-    opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    },
-    keys = { -- For some reason, I can't refactor this into its own lua file
-      {
-        "<leader>?",
-        function()
-          require("which-key").show({ global = false })
-        end,
-        desc = "Buffer Local Keymaps (which-key)",
-      },
-    },
-  },
   -- { "folke/neoconf.nvim", cmd = "Neoconf" },
   "ThePrimeagen/vim-be-good",
   {
