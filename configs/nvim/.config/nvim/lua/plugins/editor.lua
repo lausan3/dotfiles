@@ -60,7 +60,29 @@ return {
   -- },
 
   -- DAP: Debug Adapter Protocol
-  -- {
-  --   "mfussenegger/nvim-dap",
-  -- },
+  {
+    "mfussenegger/nvim-dap",
+    dependencies = {
+      "rcarriga/nvim-dap-ui",
+      "nvim-neotest/nvim-nio",
+    },
+    -- Do NOT use config = true or a config function that calls dap.setup()
+    config = function()
+      local dap = require("dap")
+      local dapui = require("dapui")
+
+      dapui.setup()
+
+      -- Correct way to configure nvim-dap is via listeners
+      dap.listeners.after.event_initialized["dapui_config"] = function()
+        dapui.open()
+      end
+      dap.listeners.before.event_terminated["dapui_config"] = function()
+        dapui.close()
+      end
+      dap.listeners.before.event_exited["dapui_config"] = function()
+        dapui.close()
+      end
+    end,
+  },
 }

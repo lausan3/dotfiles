@@ -41,6 +41,7 @@ keymap.set("n", "<C-w><right>", "<C-w>>")
 keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
 
+-- Flutter keymaps
 keymap.set("n", "<leader>fr", "<cmd>FlutterRun<cr>", { desc = "Run Flutter App" })
 keymap.set("n", "<leader>fR", "<cmd>FlutterRestart<cr>", { desc = "Hot Restart" })
 keymap.set("n", "<leader>fq", "<cmd>FlutterQuit<cr>", { desc = "Quit Flutter App" })
