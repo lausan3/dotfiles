@@ -1,6 +1,15 @@
 return {
   "nvim-lua/plenary.nvim",
+  { "NvChad/base46", branch = "v2.0",
+    build = function()
+      require("base46").load_all_highlights()
+    end,
+  },
+
+  -- More useful keymaps
+  { 'echasnovski/mini.nvim', version = false },
   "kyazdani42/nvim-web-devicons",
+
   -- Only load whichkey after all the gui
   {
     "folke/which-key.nvim",
@@ -10,7 +19,7 @@ return {
       -- or leave it empty to use the default settings
       -- refer to the configuration section below
     },
-    keys = { -- For some reason, I can't refactor this into its own lua file
+    keys = {
       {
         "<leader>?",
         function()
@@ -20,11 +29,10 @@ return {
       },
     },
   },
-  -- { "folke/neoconf.nvim", cmd = "Neoconf" },
+
+  "folke/neodev.nvim",
+  { "folke/neoconf.nvim", cmd = "Neoconf" },
   "ThePrimeagen/vim-be-good",
-  {
-    "IogaMaster/neocord",
-    event = "VeryLazy",
-    opts = require("plugins.options.neocord"),
-  },
+  { 'IogaMaster/neocord', event = "VeryLazy" },
 }
+
