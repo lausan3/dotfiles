@@ -143,6 +143,9 @@ source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
 # mysql
 export PATH="$PATH:/usr/local/mysql/bin"
 
+# flutter
+export PATH="$PATH:$HOME/Dev/Flutter/flutter/bin"
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -171,3 +174,4 @@ alias mt-nvimconfig="cd $DOTFILES_DIR/nvim/.config/nvim"  # mt means move to
 alias ecf-zsh="$EDITOR $DOTFILES_DIR/zsh/.zshrc"
 alias ecf-nvim="$EDITOR $DOTFILES_DIR/nvim/.config/nvim/init.lua"
 alias ecf-ghostty="$EDITOR $DOTFILES_DIR/ghostty/Library/Application\ Support/com.mitchellh.ghostty/config"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
