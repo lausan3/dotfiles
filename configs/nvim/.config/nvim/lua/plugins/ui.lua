@@ -5,5 +5,5 @@ return {
     event = "BufReadPre",
   },
 
-  -- "stevearc/dressing.nvim",
+  "stevearc/dressing.nvim",
 }

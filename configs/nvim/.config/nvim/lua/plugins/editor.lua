@@ -60,7 +60,7 @@ return {
   -- },
 
   -- DAP: Debug Adapter Protocol
-  {
-    "mfussenegger/nvim-dap",
-  },
+  -- {
+  --   "mfussenegger/nvim-dap",
+  -- },
 }
