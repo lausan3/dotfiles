@@ -21,6 +21,7 @@ return {
         widget_guides = {
           enabled = true,
         },
+        hot_reload = true,
         lsp = {
           color_render = true,
           settings = {

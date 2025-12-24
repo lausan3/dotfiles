@@ -46,5 +46,6 @@ keymap.set("n", "<leader>flr", "<cmd>FlutterRun<cr>", { desc = "Run Flutter App"
 keymap.set("n", "<leader>flR", "<cmd>FlutterRestart<cr>", { desc = "Hot Restart" })
 keymap.set("n", "<leader>flq", "<cmd>FlutterQuit<cr>", { desc = "Quit Flutter App" })
 keymap.set("n", "<leader>fld", "<cmd>FlutterDevices<cr>", { desc = "Select Device/Emulator" })
+keymap.set("n", "<leader>flD", "<cmd>FlutterDebug<cr>", { desc = "Debug Flutter App" })
 keymap.set("n", "<leader>fle", "<cmd>FlutterEmulators<cr>", { desc = "List Emulators" })
 keymap.set("n", "<leader>flo", "<cmd>FlutterOutlineToggle<cr>", { desc = "Toggle Flutter Outline" })
