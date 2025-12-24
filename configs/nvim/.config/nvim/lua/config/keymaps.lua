@@ -18,6 +18,9 @@ keymap.set("n", "<C-a>", "gg<S-v>G")
 keymap.set("n", "<Leader>o", "o<Esc>^Da", opts)
 keymap.set("n", "<Leader>O", "O<Esc>^Da", opts)
 
+-- Show Code Actions like VSCode (well, similar)
+keymap.set("n", "<M-.>", vim.lsp.buf.code_action, { desc = "Show Code Actions" })
+
 -- Jumplist
 keymap.set("n", "<C-m>", "<C-i>", opts)
 
