@@ -3,6 +3,15 @@ return {
   {
     "catgoose/nvim-colorizer.lua",
     event = "BufReadPre",
+    opts = function(opts)
+      opts.user_default_options = {
+        RRGGBBAA = true,
+        AARRGGBB = true,
+        tailwind = true,
+      }
+
+      return opts
+    end,
   },
 
   "stevearc/dressing.nvim",
