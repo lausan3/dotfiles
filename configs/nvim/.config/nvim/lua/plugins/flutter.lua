@@ -30,6 +30,7 @@ return {
             analysisExcludedFolders = {
               vim.fn.expand("$HOME/.pub-cache"),
             },
+            updateImportsOnRename = true,
           },
         },
       })
