@@ -1,6 +1,7 @@
 # Anthony's Neovim Config
 
 ## Plugins I use
+
 - I use **LazyVim** as my default Neovim configurator and plugin manager. I have the following plugins configured from it:
   - [folke/flash.nvim](https://github.com/folke/flash.nvim): for searching throughout a file
   - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) for fuzzy finding
@@ -14,5 +15,6 @@
   - [github/copilot.vim](https://github.com/github/copilot.vim) to access GitHub Copilot
   - [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) to show Git file changes
   - [catgoose/nvim-colorizer.lua](https://github.com/catgoose/nvim-colorizer.lua) to see color codes easier
+  - [aznhe21/actions-preview.nvim](https://github.com/aznhe21/actions-preview.nvim) to diff code actions before applying them
   - [stevearc/dressing.nvim](https://github.com/stevearc/dressing.nvim) to have better tool UIs
   - [vyfor/cord.nvim](https://github.com/vyfor/cord.nvim) to display my current status on Discord. The config for that is stored in [lua/plugins/cord.lua](https://github.com/lausan3/dotfiles/blob/main/configs/nvim/.config/nvim/lua/plugins/cord.lua).
