@@ -9,6 +9,7 @@
   - [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp) for better autocompletion
   - [folke/noice.nvim](https://github.com/folke/noice.nvim) for its command line interface
   - [nvim-neo-tree/neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) to see a workspace file tree
+  - [folke/snacks.nvim](https://github.com/folke/snacks.nvim), mostly for its better messages UI and Git dashboards
 - The other plugins I use that aren't from LazyVim are:
   - [hrsh7th/cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline) for Noice command line autocompletion
   - [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim) for its commenting keybinds
