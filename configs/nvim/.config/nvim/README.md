@@ -18,3 +18,4 @@
   - [aznhe21/actions-preview.nvim](https://github.com/aznhe21/actions-preview.nvim) to diff code actions before applying them
   - [stevearc/dressing.nvim](https://github.com/stevearc/dressing.nvim) to have better tool UIs
   - [vyfor/cord.nvim](https://github.com/vyfor/cord.nvim) to display my current status on Discord. The config for that is stored in [lua/plugins/cord.lua](https://github.com/lausan3/dotfiles/blob/main/configs/nvim/.config/nvim/lua/plugins/cord.lua).
+  - [akinsho/git-conflict.nvim](https://github.com/akinsho/git-conflict.nvim) to help resolve git conflicts

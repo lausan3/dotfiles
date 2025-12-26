@@ -89,4 +89,11 @@ return {
     "aznhe21/actions-preview.nvim",
     event = "VeryLazy",
   },
+  {
+    "akinsho/git-conflict.nvim",
+    version = "*",
+    config = true,
+    default_mappings = true,
+    default_commands = true,
+  },
 }
