@@ -31,6 +31,8 @@ return {
               vim.fn.expand("$HOME/.pub-cache"),
             },
             updateImportsOnRename = true,
+            enableSnippets = true,
+            enableSdkFormatter = true,
           },
         },
       })

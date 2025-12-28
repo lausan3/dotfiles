@@ -47,6 +47,7 @@ keymap.set("n", "<C-w><down>", "<C-w>-")
 -- Flutter keymaps
 keymap.set("n", "<leader>flr", "<cmd>FlutterRun<cr>", { desc = "Run Flutter App" })
 keymap.set("n", "<leader>flR", "<cmd>FlutterRestart<cr>", { desc = "Hot Restart" })
+keymap.set("n", "<leader>flh", "<cmd>FlutterReload<cr>", { desc = "Hot Reload" })
 keymap.set("n", "<leader>flq", "<cmd>FlutterQuit<cr>", { desc = "Quit Flutter App" })
 keymap.set("n", "<leader>fld", "<cmd>FlutterDevices<cr>", { desc = "Select Device/Emulator" })
 keymap.set("n", "<leader>flD", "<cmd>FlutterDebug<cr>", { desc = "Debug Flutter App" })
