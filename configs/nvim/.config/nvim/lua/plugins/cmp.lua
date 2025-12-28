@@ -8,7 +8,22 @@ return {
     opts = function(_, opts)
       local cmp = require("cmp")
 
-      cmp.setup(opts)
+      local compare = require("cmp.config.compare")
+
+      opts.sorting = {
+        priority_weight = 2,
+        comparators = {
+          compare.offset, -- Favor matches closer to the cursor
+          compare.exact, -- Exact matches first
+          compare.score, -- THIS is the LSP's context score
+          compare.recently_used,
+          compare.locality, -- Favor variables in current function/file
+          compare.kind, -- Favor "Variable" or "Constant" over "Snippet"
+          compare.sort_text,
+          compare.length,
+          compare.order,
+        },
+      }
 
       -- Set up cmdline completion for Noice
       cmp.setup.cmdline(":", {
@@ -27,6 +42,8 @@ return {
         ["<C-d>"] = cmp.mapping.scroll_docs(-4),
         ["<CR>"] = cmp.mapping.confirm({ select = true }),
       })
+
+      cmp.setup(opts)
     end,
   },
   {
