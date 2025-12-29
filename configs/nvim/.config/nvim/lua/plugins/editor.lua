@@ -24,33 +24,33 @@ return {
   },
 
   -- Neo-tree: File explorer
-  {
-    "nvim-neo-tree/neo-tree.nvim",
-    keys = {
-      { "<C-n>", "<cmd>Neotree toggle<cr>", desc = "Toggle Neo-tree" },
-      { "<leader>e", "<cmd>Neotree focus<cr>", desc = "Focus Neo-tree" },
-    },
-    opts = {
-      filesystem = {
-        -- This helps with your directory issue:
-        -- it ensures the tree follows your current working directory
-        follow_current_file = { enabled = true },
-        use_libuv_file_watcher = true,
-        filtered_items = {
-          visible = true, -- shows dotfiles by default
-          hide_dotfiles = false,
-          hide_gitignored = false,
-        },
-      },
-      window = {
-        width = 30,
-        mappings = {
-          -- This makes it feel more like NvChad/Telescope
-          ["<space>"] = "none", -- disable space so it doesn't conflict with your leader
-        },
-      },
-    },
-  },
+  -- {
+  --   "nvim-neo-tree/neo-tree.nvim",
+  --   keys = {
+  --     { "<C-n>", "<cmd>Neotree toggle<cr>", desc = "Toggle Neo-tree" },
+  --     { "<leader>e", "<cmd>Neotree focus<cr>", desc = "Focus Neo-tree" },
+  --   },
+  --   opts = {
+  --     filesystem = {
+  --       -- This helps with your directory issue:
+  --       -- it ensures the tree follows your current working directory
+  --       follow_current_file = { enabled = true },
+  --       use_libuv_file_watcher = true,
+  --       filtered_items = {
+  --         visible = true, -- shows dotfiles by default
+  --         hide_dotfiles = false,
+  --         hide_gitignored = false,
+  --       },
+  --     },
+  --     window = {
+  --       width = 30,
+  --       mappings = {
+  --         -- This makes it feel more like NvChad/Telescope
+  --         ["<space>"] = "none", -- disable space so it doesn't conflict with your leader
+  --       },
+  --     },
+  --   },
+  -- },
   -- Telescope: Fuzzy Finder
   -- {
   --   "nvim-telescope/telescope.nvim",
