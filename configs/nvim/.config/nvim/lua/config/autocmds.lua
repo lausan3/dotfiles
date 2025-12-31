@@ -11,13 +11,3 @@ vim.api.nvim_create_autocmd("VimResized", {
     vim.cmd("tabdo wincmd =")
   end,
 })
-
-vim.api.nvim_create_autocmd("BufWritePre", {
-  pattern = "*.dart",
-  callback = function()
-    vim.lsp.buf.code_action({
-      context = { diagnostics = {}, only = { "source.organizeImports" } },
-      apply = true,
-    })
-  end,
-})
