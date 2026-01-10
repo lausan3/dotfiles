@@ -5,7 +5,12 @@ return {
     event = "VeryLazy",
     opts = function()
       local icon_api = require("cord.api.icon")
-      local repo_cache = {}
+
+      vim.filetype.add({
+        pattern = {
+          ["*%log|LOG"] = "log",
+        },
+      })
 
       return {
         enabled = true,
@@ -121,6 +126,13 @@ return {
           tsx = icon_api.get("react"),
           cmake = icon_api.get("cmake"),
           xml = icon_api.get("xml"),
+          log = icon_api.get("log"),
+
+          -- Non-language Icons
+          file_browser = icon_api.get("folder"),
+          terminal = icon_api.get("terminal"),
+          debug = icon_api.get("bug"),
+          test = icon_api.get("test"),
         },
       }
     end,
