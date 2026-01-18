@@ -1,3 +1,6 @@
 return {
-  "github/copilot.vim",
+  "zbirenbaum/copilot.lua",
+  opts = {
+    copilot_node_command = vim.fn.expand("$HOME") .. "/.nvm/versions/node/v22.22.0/bin/node",
+  },
 }

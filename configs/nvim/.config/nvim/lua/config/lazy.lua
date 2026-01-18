@@ -1,3 +1,5 @@
+vim.env.PATH = "/opt/homebrew/bin:/usr/local/bin:" .. vim.env.PATH
+
 vim.g.root_spec = { "cwd" }
 vim.g.mapleader = "<Space>"
 
