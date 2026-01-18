@@ -21,7 +21,7 @@ return {
           tooltip = "Neovim",
         },
         display = {
-          theme = "catpuccin",
+          theme = "catppuccin",
           flavor = "dark",
           view = "full",
           swap_fields = false,
