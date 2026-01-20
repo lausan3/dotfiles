@@ -53,5 +53,5 @@ keymap.set("n", "<leader>fld", "<cmd>FlutterDevices<cr>", { desc = "Select Devic
 keymap.set("n", "<leader>flD", "<cmd>FlutterDebug<cr>", { desc = "Debug Flutter App" })
 keymap.set("n", "<leader>fle", "<cmd>FlutterEmulators<cr>", { desc = "List Emulators" })
 keymap.set("n", "<leader>flo", "<cmd>FlutterOutlineToggle<cr>", { desc = "Toggle Flutter Outline" })
-keymap.set("n", "<leader>fldt", "<cmd>FlutterDevTools<cr>", { desc = "Open Flutter DevTools" })
+keymap.set("n", "<leader>flldt", "<cmd>FlutterDevTools<cr>", { desc = "Open Flutter DevTools" })
 keymap.set("n", "<leader>fllc", "<cmd>FlutterLogClear<cr>", { desc = "Clear Flutter Logs" })
