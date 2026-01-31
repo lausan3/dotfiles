@@ -13,7 +13,7 @@ return {
     image = { enabled = true },
     indent = { enabled = true },
     input = { enabled = true },
-    picker = { enabled = true },
+    picker = { enabled = true, hidden = true },
     notifier = { enabled = true },
     quickfile = { enabled = true },
     rename = { enabled = true },
