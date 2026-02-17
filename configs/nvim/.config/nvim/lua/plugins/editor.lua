@@ -96,4 +96,18 @@ return {
     default_mappings = true,
     default_commands = true,
   },
+  {
+    "stevearc/confirm.nvim",
+    opts = {
+      formatters_by_ft = {
+        cpp = { "clang-format -style=file" },
+        c = { "clang-format -style=file" },
+      },
+      format_on_save = {
+        allow_filetypes = { "cpp", "c" },
+        timeout_ms = 500,
+        lsp_fallback = true,
+      },
+    },
+  },
 }
