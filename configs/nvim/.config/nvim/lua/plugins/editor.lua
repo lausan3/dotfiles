@@ -97,7 +97,7 @@ return {
     default_commands = true,
   },
   {
-    "stevearc/confirm.nvim",
+    "stevearc/conform.nvim",
     opts = {
       formatters_by_ft = {
         cpp = { "clang-format -style=file" },
