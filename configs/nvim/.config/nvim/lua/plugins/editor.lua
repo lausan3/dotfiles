@@ -102,9 +102,10 @@ return {
       formatters_by_ft = {
         cpp = { "clang-format -style=file" },
         c = { "clang-format -style=file" },
+        py = { "ruff format" },
       },
       format_on_save = {
-        allow_filetypes = { "cpp", "c" },
+        allow_filetypes = { "cpp", "c", "py" },
         timeout_ms = 500,
         lsp_fallback = true,
       },
